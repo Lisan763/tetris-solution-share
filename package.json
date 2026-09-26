@@ -1,0 +1,25 @@
+{
+  "name": "tetris-solution-share",
+  "version": "1.0.0",
+  "description": "Standalone offline Tetris solution editor with Share Code and GIF export.",
+  "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lisan763/tetris-solution-share.git"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node build.mjs --test && node --test .build/tests.mjs && tsc -p tsconfig.json",
+    "test:browser": "node build.mjs --test && node .build/browser-smoke.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.3",
+    "esbuild": "0.28.2",
+    "typescript": "5.9.3"
+  }
+}
